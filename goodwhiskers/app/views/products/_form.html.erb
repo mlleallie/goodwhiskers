@@ -15,25 +15,29 @@
     <%= f.label :name %><br>
     <%= f.text_area :name %>
   </div>
+
   <div class="field">
-    <%= f.label :mfg %><br>
+    <%= f.label :manufacturer %><br>
     <%= f.text_area :mfg %>
   </div>
+
   <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
+
   <div class="field">
     <%= f.label :url %><br>
     <%= f.text_area :url %>
   </div>
+
   <div class="field">
     <%= f.label :image %><br>
     <%= f.text_area :image %>
   </div>
+
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.text_field :user_id %>
+    <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
   <div class="actions">
     <%= f.submit %>
