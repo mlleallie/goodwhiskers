@@ -1,5 +1,7 @@
 class HomeController < ApplicationController
   def index
-#adding comment for test
+    @latest_three_reviews = Review.last(3)
+    @product = Product.all
+    @category = Category.all
   end
 end
