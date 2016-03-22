@@ -7,7 +7,7 @@
 
 <p>
   <strong>Category:</strong>
-  <%= @product.category.name %>
+  <%= link_to(@product.category.name, category_path(@product.category.id)) %>
 </p>
 
 <p>
@@ -22,12 +22,12 @@
 
 <p>
   <strong>Url:</strong>
-  <%= @product.url %>
+  <a href="http://<%= @product.url %>" target="_blank"><%= @product.url %></a>
 </p>
 
 <p>
   <strong>Image:</strong>
-  <%= @product.image %>
+  <a href="http://<%= @product.image %>" target="_blank"><%= @product.image %></a>
 </p>
 
 <p>
