@@ -30,5 +30,13 @@
   <%= @product.user.email %>
 </p>
 
+<%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
+
+<h2>Reviews:</h2>
+<% @reviews.each do |f| %>
+  <h3><%= f.comment %></h3>
+<% end %>
+
+
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
