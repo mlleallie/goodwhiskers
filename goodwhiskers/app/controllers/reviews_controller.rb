@@ -11,6 +11,7 @@ class ReviewsController < ApplicationController
     @review.product = @product
     @review.save
     redirect_to product_path(@product)
+    raise
 
   end
 
