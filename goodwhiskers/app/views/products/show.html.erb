@@ -36,6 +36,7 @@
 <% @reviews.each do |f| %>
   <h4><%= f.title %></h4>
   <p><%= f.comment %></p>
+  <p><%= rating_for f, "rating" %></p>
 <% end %>
 
 
