@@ -13,3 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+.btn {
+  margin: 5px;
+}
+
+h1{
+  text-align: center;
+}
+
+.login-logout {
+  float:right;
+}
