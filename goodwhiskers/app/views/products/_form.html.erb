@@ -22,8 +22,10 @@
   </div>
 
   <div class="field">
-    <select name="Category">
-      <%= collection_select(:category, :product_id, Category.all, :id, :category) %>
+    <select name="product[category_id]">
+      <% Category.all.each do |category| %>
+      <option value="<%= category.id %>"><%= category.name %></option>
+      <% end %>
     </select>
   </div>
 
