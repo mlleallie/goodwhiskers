@@ -8,17 +8,19 @@
     <%= f.label :review %><br>
     <%= f.text_area :comment %>
   </div>
+
+
   <div>
   <p>1</p>
-  <%= radio_button_tag(:rating, "1") %>
+  <%= radio_button_tag("review[rating]", "1") %>
   <p>2</p>
-  <%= radio_button_tag(:rating, "2") %>
+  <%= radio_button_tag("review[rating]", "2") %>
   <p>3</p>
-  <%= radio_button_tag(:rating, "3") %>
+  <%= radio_button_tag("review[rating]", "3") %>
   <p>4</p>
-  <%= radio_button_tag(:rating, "4") %>
+  <%= radio_button_tag("review[rating]", "4") %>
   <p>5</p>
-  <%= radio_button_tag(:rating, "5") %>
+  <%= radio_button_tag("review[rating]", "5") %>
   </div>
 
   <div class="field">
