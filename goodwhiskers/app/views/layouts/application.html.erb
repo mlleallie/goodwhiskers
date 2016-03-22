@@ -5,12 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/journal/bootstrap.min.css">
+
 </head>
 <body>
 
+
+<header>
+  <span class="login-logout">
+    <button class="btn"> <%= link_to 'Log Out', destroy_user_session_path, method: :delete %></button>
+    <button class="btn"> <%= link_to 'Log In', new_user_session_path, method: :get %></button>
+  </span>
+</header>
+
 <%= yield %>
 
-<%= link_to 'Log Out', destroy_user_session_path, method: :delete %>
-<%= link_to 'Log In', new_user_session_path, method: :get %>
+
 </body>
 </html>
