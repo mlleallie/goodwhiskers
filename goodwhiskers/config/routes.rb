@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+
   get 'home/index'
+  post '/rate' => 'rater#create', :as => 'rate'
 
   resources :categories
 

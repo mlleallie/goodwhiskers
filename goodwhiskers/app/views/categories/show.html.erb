@@ -1,0 +1,13 @@
+<h1>Category: <%= @category.name %></h1>
+
+<h2>Products:</h2>
+<% @products.each do |f| %>
+  <h4><%= link_to(f.name, product_path(f)) %></h4>
+  <p><%= f.image %></p>
+  <p><%= truncate(f.description, length: 50) { link_to " read on!", product_path(f) }
+ %></p>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', products_path %>
