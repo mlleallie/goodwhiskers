@@ -22,6 +22,12 @@
   </div>
 
   <div class="field">
+    <select name="Category">
+      <%= collection_select(:category, :product_id, Category.all, :id, :category) %>
+    </select>
+  </div>
+
+  <div class="field">
     <%= f.label :description %><br>
     <%= f.text_area :description %>
   </div>
