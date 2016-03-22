@@ -4,7 +4,8 @@
 <% @products.each do |f| %>
   <h4><%= link_to(f.name, product_path(f)) %></h4>
   <p><%= f.image %></p>
-  <p><%= f.description %></p>
+  <p><%= truncate(f.description, length: 50) { link_to " read on!", product_path(f) }
+ %></p>
 <% end %>
 
 <br>
