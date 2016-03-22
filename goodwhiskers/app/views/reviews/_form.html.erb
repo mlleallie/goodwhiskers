@@ -10,9 +10,13 @@
   </div>
 
   <div class="field">
-    <%= f.hidden_field :user_id, value: current_user.id %>
+    <%= f.label :rating %><br>
+    <%= f.text_area :rating %>
   </div>
 
+  <div class="field">
+    <%= f.hidden_field :user_id, value: current_user.id %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
