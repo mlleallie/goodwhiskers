@@ -1,3 +1,6 @@
+.boom {
+  background: #222932; }
+
 .cat_show {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a");
   width: 100%;
@@ -5,14 +8,40 @@
   margin: 0;
   height: 300px;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  border-bottom: solid #251e23 5px; }
   .cat_show .cat_title {
     padding-top: 150px;
     font-size: 50px;
-    color: #B5D6B2;
+    color: #59541a;
     font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     text-align: center;
     margin: 0; }
+
+.cat_prods {
+  margin-left: 20px; }
+  .cat_prods .prod_title {
+    margin-bottom: 0; }
+    .cat_prods .prod_title a {
+      text-decoration: none;
+      font-size: 30px;
+      color: #59541a;
+      font-family: 'Libre Baskerville', serif; }
+      .cat_prods .prod_title a:hover {
+        font-style: italic;
+        background: #222932;
+        color: #59541a; }
+
+p.mfg {
+  margin-top: 0;
+  font-size: 10px; }
+
+#divider {
+  margin: 0 auto;
+  width: 100%; }
+
+p {
+  color: #919b85; }
 
 /*# sourceMappingURL=categories.css.map */

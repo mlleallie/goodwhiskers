@@ -1,15 +1,24 @@
+<div class="boom">
+
 <header class="cat_show">
   <h1 class="cat_title"><%= @category.name.pluralize %></h1>
 </header>
 
-<h2>Products:</h2>
-<% @products.each do |f| %>
-  <h4><%= link_to(f.name, product_path(f)) %></h4>
-  <p><%= f.image %></p>
-  <p><%= truncate(f.description, length: 50) { link_to " read on!", product_path(f) }
- %></p>
-<% end %>
+<div class="cat_body">
+    <div class="cat_prods">
+      <% @products.each do |f| %>
+        <h4 class="prod_title"><%= link_to(f.name, product_path(f)) %></h4>
+        <p class="mfg">Created by: <%= f.mfg %></p><br>
+        <p><%= f.image %></p><br>
+        <p><%= truncate(f.description, length: 50) { link_to " read on!", product_path(f) }
+       %></p>
+       <img id="divider" src="http://cliparts.co/cliparts/8iE/6yR/8iE6yRj4T.png" alt="divider">
+      <% end %>
+    </div>
+</div>
 
 <br>
 
 <%= link_to 'Back', products_path %>
+
+</div>
