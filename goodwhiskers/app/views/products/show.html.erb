@@ -35,6 +35,8 @@
   <%= @product.user.email %>
 </p>
 
+<%= image_tag @product.image %>
+
 <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
 
 <h2>Reviews:</h2>

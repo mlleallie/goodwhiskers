@@ -40,9 +40,8 @@
   </div>
 
 <div class="field">
-  <%= f.label :image, :method => :post do  %>
-  <%= cl_image_upload_tag(:image_id) %>
-  <% end %>
+  <%= f.label :image  %>
+  <%= f.file_field(:image) %>
 </div>
 
   <div class="field">
