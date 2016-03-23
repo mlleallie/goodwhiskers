@@ -1,4 +1,12 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_user!, only: [:edit, :update, :destroy]
+
+  def edit
+    @reviews = Review.find(params[:id])
+    @user = @reviews[:user_id]
+    # if current user = review user id = true
+
+  end
 
   def new
     @review = Review.new
@@ -11,8 +19,6 @@ class ReviewsController < ApplicationController
     @review.product = @product
     @review.save
     redirect_to product_path(@product)
-    # raise
-
   end
 
   # def show

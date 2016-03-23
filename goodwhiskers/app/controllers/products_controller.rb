@@ -10,6 +10,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1
   # GET /products/1.json
+
   def show
     @product = Product.find(params[:id])
     @reviews = @product.reviews
@@ -23,6 +24,7 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+
   end
 
   # POST /products

@@ -1,6 +1,13 @@
 <h1>Editing Product</h1>
 
-<%= render 'form' %>
 
-<%= link_to 'Show', @product %> |
+<% if current_user === @user %>
+  <%= render 'form' %>
+<% else %>
+<% "You don't currently have permission to edit this review." %>
+<% end %>
+
+
+
+<%= link_to 'Show', @product %>
 <%= link_to 'Back', products_path %>
