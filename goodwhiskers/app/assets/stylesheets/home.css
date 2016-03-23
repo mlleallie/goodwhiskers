@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0; }
 
+.homepage_body {
+  background-color: #0e1223; }
+
 .homepage_header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1454679371063-8b15f1b98f1b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3b38c0c917a5c881949abe613f53e7aa");
   width: 100%;
@@ -19,6 +22,10 @@ body {
     text-align: center;
     margin: 0; }
 
+.prod_cats {
+  color: #273557;
+  font-family: 'Libre Baskerville', serif; }
+
 .home_nav .nav_links {
   text-decoration: none;
   list-style: none; }
@@ -27,11 +34,16 @@ p {
   display: inline-block; }
 
 .sidebar_nav {
-  width: 100px;
+  width: 200px;
   float: left;
   margin-right: 40px;
   vertical-align: top;
   margin-left: 20px; }
+  .sidebar_nav .nav_links a {
+    color: #AA9F7E;
+    text-decoration: none;
+    text-align: left;
+    display: table; }
 
 .about {
   width: 400px;
