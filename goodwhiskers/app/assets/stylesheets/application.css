@@ -16,7 +16,7 @@
 
 body {
   padding:0px;
-  background-color: #5A464C;
+  background-color: rgb(14, 18, 35)
 }
 
 .site_nav{
@@ -27,8 +27,35 @@ body {
   padding: 5px;
 }
 
+.site_nav a {
+  color: #FFEFBD;
+}
+
+.site_nav.a:visited {
+    color: green;
+  }
+
+.site_nav.a:hover {
+    color: white;
+  }
+
 .login_logout {
   float: right;
   margin-right: 10px;
 }
 
+
+/*.footer_bar {
+  text-align: center;
+  background-color: black;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 30px;
+  width: 100%;
+  overflow:hidden;
+}*/
+
+p.feet {
+  font-size: 10px;
+}
