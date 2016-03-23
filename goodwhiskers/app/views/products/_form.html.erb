@@ -39,10 +39,11 @@
     <%= f.text_area :url %>
   </div>
 
-  <div class="field">
-    <%= f.label :image %><br>
-    <%= f.text_area :image %>
-  </div>
+<div class="field">
+  <%= f.label :image, :method => :post do  %>
+  <%= cl_image_upload_tag(:image_id) %>
+  <% end %>
+</div>
 
   <div class="field">
     <%= f.hidden_field :user_id, value: current_user.id %>
