@@ -14,14 +14,29 @@
  *= require_self
  */
 
-.btn {
-  margin: 5px;
-}
-
-h1{
+header{
   text-align: center;
 }
 
-.login-logout {
-  float:right;
+#site-heading {
+clear: left;
 }
+
+.home-btn {
+  float: left;
+}
+
+.login-logout {
+  float: right;
+}
+
+body {
+  padding:5px;
+}
+
+h1.body {
+  clear: both;
+  text-align: center;
+}
+
+
