@@ -33,9 +33,9 @@ class ProductsController < ApplicationController
     if params[:image_id].present?
   preloaded = Cloudinary::PreloadedFile.new(params[:image_id])         
   raise "Invalid upload signature" if !preloaded.valid?
-  @product.image = preloaded.identifier
+  @product.image_id = preloaded.identifier
 end
-raise
+
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
