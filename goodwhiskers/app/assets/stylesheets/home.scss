@@ -15,20 +15,41 @@ body {
   height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  border: 1px grey solid;
+  // border: 1px grey solid;
+    .home_title {
+      padding-top: 150px;
+      font-size: 50px;
+      color: #B5D6B2;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+    }
 }
 
-.home_title {
-  padding-top: 150px;
-  font-size: 50px;
-  color: #B5D6B2;
-  font-family: 'Libre Baskerville', serif;
-  font-weight: 700;
-}
+
 
 .home_nav{
   .nav_links{
     text-decoration: none;
     list-style: none;
   }
+}
+
+p{
+  display: inline-block;
+}
+
+.sidebar_nav {
+  width: 100px;
+  float: left;
+  margin-right: 40px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.about {
+  width: 400px;
+  vertical-align: top;
+  float: left;
 }

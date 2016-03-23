@@ -7,23 +7,26 @@
 
 </header>
 
-<h3>About GoodWhiskers</h3>
-<p class="about">
-Hi there, and welcome to GoodWhiskers! We're the best
+<p>
+  <nav class="sidebar_nav">
+    <h3>Product Categories</h3>
+    <ul class="home_nav">
+      <% @category.each do  |category| %>
+      <li class="nav_links"><%= link_to(category.name, category_path(category.id)) %></a></li>
+      <% end %>
+      <li class="nav_links"> <%= link_to "All Products", products_path %> </li>
+    </ul>
+  </nav>
 </p>
 
-<p class="sidebar_nav">
-<nav>
-<h3>Product Categories</h3>
-<ul class="home_nav">
-  <% @category.each do  |category| %>
-  <li class="nav_links"><%= link_to(category.name, category_path(category.id)) %></a></li>
-  <% end %>
-  <li class="nav_links"> <%= link_to "All Products", products_path %> </li>
+<div class="about">
+  <h3>About GoodWhiskers</h3>
+  <p>
+    Hi there, and welcome to GoodWhiskers! We're the best mens' grooming products site on the web. Feel free to submit products for review, submit reviews for products, or just peruse products and reviews of others.<br>
 
-</ul>
-</nav>
-</p>
+    <br>But please don't forget to keep your face groomed.
+  </p>
+</div>
 
 <!-- </body>
  -->
