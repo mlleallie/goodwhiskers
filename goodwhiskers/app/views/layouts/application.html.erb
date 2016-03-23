@@ -19,10 +19,23 @@
     </span>
 
     <span class="login_logout">
-      <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
-      </span>
-      <span class="login_logout">
-      <a> <%= link_to 'Log In', new_user_session_path, method: :get%></a>
+      <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
+        <!-- generate Log In and Sign Up buttons -->
+        <span>
+          <a> <%= link_to 'Log In', new_user_session_path, method: :get%></a>
+        </span>
+        <span class="login_logout">
+          <a> <%= link_to 'Sign Up', new_user_registration_path, method: :get%></a>
+        </span>
+      <% else %> <!-- execute this code block if the user IS signed in -->
+      <!-- greet the user and offer log out button -->
+        <span>
+          <a> <%= "Logged in as: " + current_user.email %></a>
+        </span>
+        <span class="login_logout">
+          <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
+        </span>
+      <% end %>
     </span>
   </nav>
 </header>
