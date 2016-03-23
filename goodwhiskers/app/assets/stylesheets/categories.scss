@@ -1,3 +1,22 @@
 // Place all the styles related to the Categories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.cat_show {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a');
+  width: 100%;
+  position: relative;
+  margin: 0;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .cat_title {
+    padding-top: 150px;
+    font-size: 50px;
+    color: #B5D6B2;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+  }
+}

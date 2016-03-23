@@ -27,11 +27,16 @@ p {
   display: inline-block; }
 
 .sidebar_nav {
-  width: 100px;
+  width: 200px;
   float: left;
   margin-right: 40px;
   vertical-align: top;
   margin-left: 20px; }
+  .sidebar_nav .nav_links a {
+    color: #AA9F7E;
+    text-decoration: none;
+    text-align: left;
+    display: table; }
 
 .about {
   width: 400px;
