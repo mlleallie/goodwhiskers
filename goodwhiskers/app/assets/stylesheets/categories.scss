@@ -58,3 +58,12 @@ p.mfg {
 p {
   color: #919b85;
 }
+
+.prod_link a{
+  color: rgb(89, 84, 26);
+  text-decoration: none;
+    &:hover{
+      font-style: italic;
+      color: rgb(89, 84, 26);
+    }
+}
