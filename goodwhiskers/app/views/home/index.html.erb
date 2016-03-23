@@ -1,6 +1,6 @@
 
-<!-- <body class="homepage_body">
- -->
+<div class="homepage_body">
+
 <header id="header" class="homepage_header">
 
   <h1 class="home_title">GoodWhiskers</h1>
@@ -9,7 +9,7 @@
 
 <p>
   <nav class="sidebar_nav">
-    <h3>Product Categories</h3>
+    <h3 class="prod_cats">Product Categories</h3>
     <ul class="home_nav">
       <% @category.each do  |category| %>
       <li class="nav_links"><%= link_to(category.name, category_path(category.id)) %></a></li>
@@ -20,7 +20,7 @@
 </p>
 
 <div class="about">
-  <h3>About GoodWhiskers</h3>
+  <h3 class="prod_cats">About GoodWhiskers</h3>
   <p>
     Hi there, and welcome to GoodWhiskers! We're the best mens' grooming products site on the web. Feel free to submit products for review, submit reviews for products, or just peruse products and reviews of others.<br>
 
@@ -28,5 +28,4 @@
   </p>
 </div>
 
-<!-- </body>
- -->
+</div>

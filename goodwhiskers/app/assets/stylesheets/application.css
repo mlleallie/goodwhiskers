@@ -16,8 +16,8 @@
 
 body {
   padding:0px;
-/*  background-color: #5A464C;
-*/}
+  background-color: rgb(14, 18, 35)
+}
 
 .site_nav{
   color: #FFEFBD;
@@ -30,5 +30,15 @@ body {
 .login_logout {
   float: right;
   margin-right: 10px;
+}
+
+
+.footer_bar {
+  text-align: center;
+  vertical-align: bottom;
+  display: block;
+  float: left;
+  background-color: black;
+  width: 100%;
 }
 
