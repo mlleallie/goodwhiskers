@@ -2,3 +2,54 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage_header {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1454679371063-8b15f1b98f1b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3b38c0c917a5c881949abe613f53e7aa');
+  width: 100%;
+  position: relative;
+  margin: 0;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  // border: 1px grey solid;
+    .home_title {
+      padding-top: 150px;
+      font-size: 50px;
+      color: #B5D6B2;
+      font-family: 'Libre Baskerville', serif;
+      font-weight: 700;
+      text-align: center;
+      margin: 0;
+    }
+}
+
+
+
+.home_nav{
+  .nav_links{
+    text-decoration: none;
+    list-style: none;
+  }
+}
+
+p{
+  display: inline-block;
+}
+
+.sidebar_nav {
+  width: 100px;
+  float: left;
+  margin-right: 40px;
+  vertical-align: top;
+  margin-left: 20px;
+}
+
+.about {
+  width: 400px;
+  vertical-align: top;
+  float: left;
+}

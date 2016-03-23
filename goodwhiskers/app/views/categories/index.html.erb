@@ -1,0 +1,8 @@
+<h1>All Categories:</h1>
+
+<% @categories.each do |f| %>
+  <h2> Title: <%= f.name %></h2>
+<% end %>
+<br>
+
+<%= link_to 'Back', products_path %>
