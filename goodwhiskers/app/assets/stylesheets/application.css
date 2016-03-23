@@ -14,29 +14,21 @@
  *= require_self
  */
 
-header{
-  text-align: center;
-}
-
-#site-heading {
-clear: left;
-}
-
-.home-btn {
-  float: left;
-}
-
-.login-logout {
-  float: right;
-}
-
 body {
-  padding:5px;
+  padding:0px;
+  background-color: #5A464C;
 }
 
-h1.body {
-  clear: both;
-  text-align: center;
+.site_nav{
+  color: #FFEFBD;
+  background-color: black;
+  font-family: 'Shadows Into Light';
+  font-size: 15px;
+  padding: 5px;
 }
 
+.login_logout {
+  float: right;
+  margin-right: 10px;
+}
 

@@ -1,13 +1,32 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
 
-<nav>
-<ul>
-  <li> <%= link_to "View All", categories_path %> </li>
-  <% @category.each do  |category| %>
-  <li><%= link_to(category.name, category_path(category.id)) %></a></li>
-  <% end %>
-</ul>
-<div>
+<!-- <body class="homepage_body">
+ -->
+<header id="header" class="homepage_header">
+
+  <h1 class="home_title">GoodWhiskers</h1>
+
+</header>
+
+<p>
+  <nav class="sidebar_nav">
+    <h3>Product Categories</h3>
+    <ul class="home_nav">
+      <% @category.each do  |category| %>
+      <li class="nav_links"><%= link_to(category.name, category_path(category.id)) %></a></li>
+      <% end %>
+      <li class="nav_links"> <%= link_to "All Products", products_path %> </li>
+    </ul>
+  </nav>
+</p>
+
+<div class="about">
+  <h3>About GoodWhiskers</h3>
+  <p>
+    Hi there, and welcome to GoodWhiskers! We're the best mens' grooming products site on the web. Feel free to submit products for review, submit reviews for products, or just peruse products and reviews of others.<br>
+
+    <br>But please don't forget to keep your face groomed.
+  </p>
 </div>
-</nav>
+
+<!-- </body>
+ -->
