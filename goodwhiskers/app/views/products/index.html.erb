@@ -17,12 +17,11 @@
 
   <tbody class="table">
     <% @products.each do |product| %>
-      <tr>
+        <td><%= link_to image_tag(product.thumb), product %></td>
         <td><%= product.name %></td>
         <td><%= product.mfg %></td>
         <td><%= product.description %></td>
         <td><%= product.url %></td>
-        <td><%= product.image %></td>
         <td><%= product.user_id %></td>
         <td><%= link_to 'Show', product %></td>
         <td><%= link_to 'Edit', edit_product_path(product) %></td>
