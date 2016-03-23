@@ -5,15 +5,13 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/journal/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="#">
+    <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
 
-
-<header>
-<h1 id="site-heading">site-heading</h1>
-
+<nav>
   <span class="home-btn">
    <button class="btn-primary"><%= link_to 'Home', home_index_path, method: :get%></button>
   </span>
@@ -24,9 +22,14 @@
     <span class="login-logout">
     <button class="btn-primary"> <%= link_to 'Log In', new_user_session_path, method: :get%></button>
   </span>
+</nav>
 
-</header>
+<!-- <header>
+<h1 id="site-heading">site-heading</h1>
+ -->
 
+<!-- </header>
+ -->
 
 <%= yield %>
 

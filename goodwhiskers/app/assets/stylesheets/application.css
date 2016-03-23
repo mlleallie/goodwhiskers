@@ -31,7 +31,8 @@ clear: left;
 }
 
 body {
-  padding:5px;
+  padding:0px;
+  background-color: #5A464C;
 }
 
 h1.body {
