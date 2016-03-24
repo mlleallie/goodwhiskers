@@ -28,24 +28,31 @@ class ProductsController < ApplicationController
     @user = @product.user_id
   end
 
-  # POST /products
-  # POST /products.json
   def create
     @product = Product.new(product_params)
-response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
+    response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
       {:width => 500, :height => 500, :crop => :limit},
      ],
-              :eager => [
-                          {:width => 75, :height => 75,
-                          :crop => :thumb, :format => 'png'},
-                ])
-     @product.image = response["url"]
-     @product.thumb = response["eager"][0]["url"]
+      :eager => [
+                  {:width => 75, :height => 75,
+                  :crop => :thumb, :format => 'png'},
+        ])
+    @product.image = response["url"]
+    @product.thumb = response["eager"][0]["url"]
+    respond_to do |format|
+      if @product.save
+        format.html { redirect_to @product, notice: 'Product was successfully created.' }
+        format.json { render :show, status: :created, location: @product }
+      else
+        format.html { render :new }
+        format.json { render json: @product.errors, status: :unprocessable_entity }
+      end
+    end
     # if params[:image_id].present?
   # preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
   # raise "Invalid upload signature" if !preloaded.valid?
   # @product.image_id = preloaded.identifier
-# end
+
 
     respond_to do |format|
       if @product.save
@@ -61,6 +68,15 @@ response = Cloudinary::Uploader.upload(params["product"]["image"], :transformati
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
+      {:width => 500, :height => 500, :crop => :limit},
+     ],
+      :eager => [
+                  {:width => 75, :height => 75,
+                  :crop => :thumb, :format => 'png'},
+        ])
+    @product.image = response["url"]
+    @product.thumb = response["eager"][0]["url"]
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
