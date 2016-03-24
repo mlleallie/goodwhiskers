@@ -15,8 +15,10 @@
 <header class="site_nav">
   <nav>
     <span class="home_btn">
-     <a><%= link_to 'Home', home_index_path, method: :get%></a>
+     <a><%= link_to 'Home', home_index_path, method: :get %></a>
     </span>
+    <span class="home_btn">
+    <a><%= link_to 'New Product', new_product_path, method: :get %></a>
 
     <span class="login_logout">
       <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
