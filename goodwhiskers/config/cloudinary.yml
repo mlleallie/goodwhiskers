@@ -3,17 +3,17 @@ development:
   cloud_name: goodwhiskers
   api_key: '972295919594893'
   api_secret: UqHjmqXaU4szo_xACSTNGvOmfiE
-  # enhance_image_tag: true
-  # static_image_support: false
+  enhance_image_tag: true
+  static_image_support: false
 production:
   cloud_name: goodwhiskers
   api_key: '972295919594893'
   api_secret: UqHjmqXaU4szo_xACSTNGvOmfiE
-  # enhance_image_tag: true
-  # static_image_support: true
+  enhance_image_tag: true
+  static_image_support: true
 test:
   cloud_name: goodwhiskers
   api_key: '972295919594893'
   api_secret: UqHjmqXaU4szo_xACSTNGvOmfiE
-  # enhance_image_tag: true
-  # static_image_support: false
+  enhance_image_tag: true
+  static_image_support: false
