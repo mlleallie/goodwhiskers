@@ -1,3 +1,15 @@
+.grid-item-product {
+  color: red; }
+
+table {
+  border-radius: 25px; }
+
+thead {
+  background-color: grey; }
+
+.table {
+  background-color: white; }
+
 .prod_img img {
   width: 100%;
   position: relative;
@@ -6,7 +18,6 @@
   background-repeat: no-repeat; }
 
 p#prod_name {
-  font-family: 'Libre Baskerville', serif;
   font-size: 30px;
   text-align: center;
   display: block;

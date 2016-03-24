@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.panel-body{text-align: center;}
+
+.title{
+  text-align: center;
+}
 
 body {
   padding:0px;
@@ -22,13 +27,13 @@ body {
 .site_nav{
   color: #FFEFBD;
   background-color: black;
-  font-family: 'Shadows Into Light';
+  /*font-family: 'Shadows Into Light';*/
   font-size: 15px;
   padding: 5px;
 }
 
 .site_nav a {
-  color: #FFEFBD;
+  color: white;
 }
 
 .site_nav.a:visited {
