@@ -1,3 +1,35 @@
+.prod_img img {
+  width: 100%;
+  position: relative;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
+p#prod_name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 30px;
+  text-align: center;
+  display: block;
+  margin-bottom: 5px; }
+
+.tiny {
+  display: block;
+  text-align: center; }
+
+.description {
+  margin-left: 10px; }
+
+.below {
+  text-align: center;
+  display: block; }
+
+.edit_back_link {
+  text-align: center; }
+  .edit_back_link a {
+    text-decoration: none;
+    color: #59541a; }
+    .edit_back_link a:hover {
+      font-style: italic;
+      color: #59541a; }
 
 /*# sourceMappingURL=products.css.map */
