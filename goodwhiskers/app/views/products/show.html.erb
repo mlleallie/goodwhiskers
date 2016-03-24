@@ -7,37 +7,36 @@
 <p id="prod_name">
   <%= @product.name %>
 </p>
-<p class="mfg">
+<p class="tiny">
   <strong>Made by:</strong>
   <%= @product.mfg %>
 </p>
 
-<p>
+<p class="tiny">
   <strong>Category:</strong>
   <%= link_to(@product.category.name, category_path(@product.category.id)) %>
 </p>
 
-
-
-<p>
-  <strong>Description:</strong>
+<p class="description">
   <%= @product.description %>
 </p>
 
-<p>
-  <strong>Url:</strong>
+<p class="below">
+  <strong>Link to product:</strong>
   <a href="http://<%= @product.url %>" target="_blank"><%= @product.url %></a>
 </p>
 
-<p>
-  <strong>User:</strong>
+<p class="below">
+  <strong>Submitted by:</strong>
   <%= @product.user.email %>
 </p>
 <br>
 
+<div class="edit_back_link">
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
-
+</div>
+<br>
 <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
 
 <h2>Reviews:</h2>

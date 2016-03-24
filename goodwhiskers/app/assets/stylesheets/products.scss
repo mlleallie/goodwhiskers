@@ -17,7 +17,28 @@ p#prod_name{
   margin-bottom: 5px;
 }
 
-.mfg {
+.tiny {
   display: block;
   text-align: center;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+.below {
+  text-align: center;
+  display: block;
+}
+
+.edit_back_link{
+  text-align: center;
+    a {
+      text-decoration: none;
+      color: rgb(89, 84, 26);
+        &:hover{
+          font-style: italic;
+          color: rgb(89, 84, 26);
+        }
+    }
 }
