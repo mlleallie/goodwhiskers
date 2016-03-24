@@ -17,6 +17,7 @@
 
   <tbody class="table">
     <% @products.each do |product| %>
+        <td><%= link_to image_tag(product.thumb), product %></td>
         <td><%= link_to(product.name, product) %></td>
         <td><%= product.mfg %></td>
         <td><%= product.description %></td>
