@@ -13,6 +13,11 @@
  *= require_tree .
  *= require_self
  */
+.panel-body{text-align: center;}
+
+.title{
+  text-align: center;
+}
 
 body {
   padding:0px;
