@@ -1,6 +1,22 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.grid-item-product {
+  color:red;
+}
+
+table {
+  border-radius: 25px;
+}
+
+thead {
+  background-color: grey;
+}
+
+.table {
+  background-color: white;
+}
+
  .prod_img img{
   width: 100%;
   position: relative;
