@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @reviews = @product.reviews
     @user = @product.user_id
+    #start for future review delete functionality
+    # @review = @reviews.find(params[:id])
   end
 
   # GET /products/new
