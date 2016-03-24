@@ -1,31 +1,29 @@
 
-body {
+#home_background {
   margin: 0;
-  padding: 0; }
-
-.homepage_body {
-  background-color: #0e1223; }
+  padding: 0;
+  background-image: url("http://res.cloudinary.com/goodwhiskers/image/upload/v1458840518/beardbackground_aikc56.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  overflow: visible; }
 
 .homepage_header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1454679371063-8b15f1b98f1b?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3b38c0c917a5c881949abe613f53e7aa");
   width: 100%;
   position: relative;
   margin: 0;
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  height: 80px; }
   .homepage_header .home_title {
-    padding-top: 150px;
-    font-size: 50px;
+    padding-top: 20px;
+    font-size: 40px;
     color: #B5D6B2;
-    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     text-align: center;
     margin: 0; }
 
 .prod_cats {
-  color: #273557;
-  font-family: 'Libre Baskerville', serif; }
+  color: white; }
 
 .home_nav .nav_links {
   text-decoration: none;
@@ -50,6 +48,9 @@ p {
   width: 400px;
   vertical-align: top;
   float: left; }
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 
 /*# sourceMappingURL=home.css.map */
