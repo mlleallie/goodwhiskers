@@ -33,7 +33,7 @@
 <br>
 
 <div class="edit_back_link">
-<% if @user == current_user %>
+<% if current_user.id == @user %>
   <%= link_to 'Edit', edit_product_path(@product) %>
 <% else %>
 <%end%>
