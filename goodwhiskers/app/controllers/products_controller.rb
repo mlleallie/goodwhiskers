@@ -44,7 +44,6 @@ response = Cloudinary::Uploader.upload(params["product"]["image"], :transformati
   # @product.image_id = preloaded.identifier
 # end
 
->>>>>>> efd2b0bcafc34ef9b8b878b3083b8535fcec8dc2
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
