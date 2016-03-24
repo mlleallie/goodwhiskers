@@ -1,4 +1,12 @@
-== README
+**GoodWhiskers**
+
+Welcome to GoodWhiskers, created by beard enthusiasts for beard enthusiasts. The base purpose of this app is to allow bearded gentlemen and ladies to share products they appreciate, have created, or use. Folks are then able to review and comment on those products, depending on their own experiences with said product. 
+
+This application was built using ruby 2.2.3, Sass 3.4.21, psql (9.5.0), and Rails 4.2.5.2.
+
+To get started, go ahead and fork the app to your own repo, clone it on down and give it a run on your server. Once it's popping, take a look around to understand the structure and intended functionality of the app.
+
+We're currently hosting and uploading images using cloudinary
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
