@@ -1,36 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Products</h1>
+<h1 class="title">Listing Products</h1>
 
-<table>
 
-  <thead>
-    <tr>
-<!--       <th>Name</th>
-      <th>Manufacturer</th>
-      <th>Description</th>
-      <th>Url</th>
-      <th>Image</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr> -->
-  </thead>
 
+<div class="row">
   <tbody class="table">
     <% @products.each do |product| %>
-    <table>
-       <%= link_to image_tag(product.thumb), product %>
-       <%= product.name %>
-       <%= product.mfg %>
-       <%= product.description %>
-       <%= product.url %>
-       <%= product.user_id %>
-       <%= link_to 'Show', product %>
-       </table>
+    <div class="col-sm-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+          <div class="product">
+            <%= link_to image_tag(product.thumb), product %></br>
+            <%= product.name %></br>
+            <%= product.mfg %></br>
+            <%= link_to 'Visit Site', product.url %></br>
+            <%= link_to 'Show', product %>
+          </div>
+        </div>
+      </div>
+    </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
+</div>
+</br>
 
 <%= link_to 'New Product', new_product_path %>

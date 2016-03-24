@@ -14,6 +14,8 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @reviews = @product.reviews
     @user = @product.user_id
+    #start for future review delete functionality
+    # @review = @reviews.find(params[:id])
   end
 
   # GET /products/new
@@ -28,25 +30,17 @@ class ProductsController < ApplicationController
     @user = @product.user_id
   end
 
-  # POST /products
-  # POST /products.json
   def create
     @product = Product.new(product_params)
-response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
+    response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
       {:width => 500, :height => 500, :crop => :limit},
      ],
-              :eager => [
-                          {:width => 75, :height => 75,
-                          :crop => :thumb, :format => 'png'},
-                ])
-     @product.image = response["url"]
-     @product.thumb = response["eager"][0]["url"]
-    # if params[:image_id].present?
-  # preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
-  # raise "Invalid upload signature" if !preloaded.valid?
-  # @product.image_id = preloaded.identifier
-# end
-
+      :eager => [
+                  {:width => 75, :height => 75,
+                  :crop => :thumb, :format => 'png'},
+        ])
+    @product.image = response["url"]
+    @product.thumb = response["eager"][0]["url"]
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
@@ -56,11 +50,24 @@ response = Cloudinary::Uploader.upload(params["product"]["image"], :transformati
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
+    # if params[:image_id].present?
+  # preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
+  # raise "Invalid upload signature" if !preloaded.valid?
+  # @product.image_id = preloaded.identifier
   end
 
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
+      {:width => 500, :height => 500, :crop => :limit},
+     ],
+      :eager => [
+                  {:width => 75, :height => 75,
+                  :crop => :thumb, :format => 'png'},
+        ])
+    @product.image = response["url"]
+    @product.thumb = response["eager"][0]["url"]
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }

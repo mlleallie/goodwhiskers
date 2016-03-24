@@ -34,11 +34,13 @@
 
 <div class="edit_back_link">
 <% if current_user.id == @user %>
-  <%= link_to 'Edit', edit_product_path(@product) %>
+  <%= link_to 'Edit', edit_product_path(@product) %> |
 <% else %>
 <%end%>
 
-<%= link_to 'Back', products_path %>
+<%= link_to('All ' + @product.category.name.pluralize, category_path(@product.category.id)) %> |
+<%= link_to('All Products', products_path) %><br>
+<%= link_to('Home', home_index_path) %>
 </div>
 
 <br>
@@ -47,7 +49,7 @@
 <h2>Reviews:</h2>
 <% @reviews.each do |f| %>
   <h4><%= f.title %></h4>
-  <p><%= f.user.email %> <%= f.created_at %></p>
-  <p><%= f.comment %></p>
+  <p><%= f.user.email %> <%= f.created_at %></p><br>
+  <p><%= f.comment %></p><br>
   <p><%= f.rating %></p>
 <% end %>
