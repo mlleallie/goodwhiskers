@@ -13,6 +13,7 @@ class ProductsController < ApplicationController
   def show
     @product = Product.find(params[:id])
     @reviews = @product.reviews
+    @user = @product.user_id
   end
 
   # GET /products/new
@@ -23,6 +24,8 @@ class ProductsController < ApplicationController
 
   # GET /products/1/edit
   def edit
+    @product = Product.find(params[:id])
+    @user = @product.user_id
   end
 
   # POST /products
@@ -30,11 +33,11 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
 response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
-      {:width => 500, :height => 500, :crop => :limit}, 
+      {:width => 500, :height => 500, :crop => :limit},
      ],
               :eager => [
-                          {:width => 75, :height => 75, 
-                          :crop => :thumb, :format => 'png'}, 
+                          {:width => 75, :height => 75,
+                          :crop => :thumb, :format => 'png'},
                 ])
      @product.image = response["url"]
      @product.thumb = response["eager"][0]["url"]

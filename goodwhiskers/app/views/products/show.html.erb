@@ -33,9 +33,14 @@
 <br>
 
 <div class="edit_back_link">
-<%= link_to 'Edit', edit_product_path(@product) %> |
+<% if @user == current_user %>
+  <%= link_to 'Edit', edit_product_path(@product) %>
+<% else %>
+<%end%>
+
 <%= link_to 'Back', products_path %>
 </div>
+
 <br>
 <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
 
