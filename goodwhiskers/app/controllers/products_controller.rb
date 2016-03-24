@@ -39,7 +39,7 @@ response = Cloudinary::Uploader.upload(params["product"]["image"], :transformati
      @product.image = response["url"]
      @product.thumb = response["eager"][0]["url"]
     # if params[:image_id].present?
-  # preloaded = Cloudinary::PreloadedFile.new(params[:image_id])         
+  # preloaded = Cloudinary::PreloadedFile.new(params[:image_id])
   # raise "Invalid upload signature" if !preloaded.valid?
   # @product.image_id = preloaded.identifier
 # end
