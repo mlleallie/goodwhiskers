@@ -1,5 +1,4 @@
-
-#home_background {
+body {
   margin: 0;
   padding: 0;
   background-image: url("http://res.cloudinary.com/goodwhiskers/image/upload/v1458840518/beardbackground_aikc56.jpg");
@@ -13,21 +12,30 @@
   width: 100%;
   position: relative;
   margin: 0;
-  height: 80px; }
+  height: 80px;
+  margin-bottom: 50px; }
   .homepage_header .home_title {
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 40px;
-    color: #B5D6B2;
-    font-weight: 700;
+    color: #644a51;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-style: italic;
     text-align: center;
     margin: 0; }
 
 .prod_cats {
-  color: white; }
+  color: #644a51;
+  font-family: 'Raleway', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px; }
 
 .home_nav .nav_links {
   text-decoration: none;
   list-style: none; }
+  .home_nav .nav_links a {
+    color: #e8e8e8; }
 
 p {
   display: inline-block; }
@@ -48,6 +56,5 @@ p {
   width: 400px;
   vertical-align: top;
   float: left; }
-
 
 /*# sourceMappingURL=home.css.map */
