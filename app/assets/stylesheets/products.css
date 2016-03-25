@@ -83,13 +83,6 @@ p#prod_name {
       text-decoration: underline;
       color: #5f7477; }
 
-<<<<<<< HEAD
-.review-title {
-  text-align: center;
-  font-family: "Arimo", sans-serif;
-  font-size: 40px;
-  color: #644a51; }
-=======
 .title {
   color: #644a51;
   font-family: "Arimo", sans-serif;
@@ -102,7 +95,6 @@ p#prod_name {
   .panel a {
     text-decoration: none;
     color: #d9b554; }
->>>>>>> df81cacfe336e50903a8d8573cf3e947da965da3
 
 .prod_img {
   text-align: center;
