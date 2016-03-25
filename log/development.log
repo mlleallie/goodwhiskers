@@ -8399,3 +8399,1302 @@ Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 11:13:56 -0500
 Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 11:13:56 -0500
 >>>>>>> master
 >>>>>>> master
+
+
+Started GET "/categories/8" for ::1 at 2016-03-25 14:06:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCategory Load (0.4ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mProduct Load (0.6ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 8]]
+  Rendered categories/show.html.erb within layouts/application (314.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 502ms (Views: 417.3ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/categories.self-a8401c0ed93ec9460797d81c194494d8f7ddaec81e0ed6eb56716c91ac8d2b56.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/categories/8" for ::1 at 2016-03-25 14:06:11 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category_id" = $1  [["category_id", 8]]
+  Rendered categories/show.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 60ms (Views: 56.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:06:11 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:06:12 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:06:12 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:06:12 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:06:12 -0500
+
+
+Started GET "/categories/8" for ::1 at 2016-03-25 14:06:24 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCategory Load (1.7ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 8]]
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:06:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  [1m[36mProduct Load (0.5ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 8]]
+  Rendered categories/show.html.erb within layouts/application (84.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 342ms (Views: 255.1ms | ActiveRecord: 9.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (16.9ms)
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:06:24 -0500
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (208.8ms)
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:06:24 -0500
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (185.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (324.7ms)
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:06:25 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:06:25 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:06:25 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:06:25 -0500
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:07:55 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"N52xx9+ntDd56fl02+l0O+EowWnSwV3hohlIhCn3LjkwQ34rD0uu0YdfpAahnuO45WW+3ZhsgMDkGYsEKINZxA=="}
+  [1m[36mReview Load (0.7ms)[0m  [1mSELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 67ms (Views: 60.2ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:07:55 -0500
+Processing by HomeController#index as HTML
+  [1m[35mReview Load (0.4ms)[0m  SELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.erb within layouts/application (20.0ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:07:55 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/categories.self-a8401c0ed93ec9460797d81c194494d8f7ddaec81e0ed6eb56716c91ac8d2b56.css?body=1" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.7ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (138.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.6ms)
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:07:56 -0500
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:08:38 -0500
+Processing by HomeController#index as HTML
+  [1m[35mReview Load (0.4ms)[0m  SELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 117ms (Views: 111.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/categories.self-06f3493c8da0c075435efcf8bf08c144f1e496cc5a7213d14f88add086847ae0.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+Processing by HomeController#index as HTML
+  [1m[36mReview Load (0.6ms)[0m  [1mSELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3[0m
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.erb within layouts/application (14.8ms)
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 104ms (Views: 100.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:08:38 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (137.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.3ms)
+
+
+Started GET "/categories/3" for ::1 at 2016-03-25 14:08:41 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (26.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/categories/2" for ::1 at 2016-03-25 14:08:46 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mProduct Load (0.2ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category_id" = $1  [["category_id", 2]]
+  Rendered categories/show.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories/5" for ::1 at 2016-03-25 14:08:50 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mProduct Load (0.3ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 5]]
+  Rendered categories/show.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 37.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/categories/8" for ::1 at 2016-03-25 14:08:53 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35mProduct Load (1.9ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category_id" = $1  [["category_id", 8]]
+  Rendered categories/show.html.erb within layouts/application (8.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 89ms (Views: 82.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/categories.self-06f3493c8da0c075435efcf8bf08c144f1e496cc5a7213d14f88add086847ae0.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/categories/8" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mCategory Load (0.3ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 8]]
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+  [1m[36mProduct Load (0.4ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 8]]
+  Rendered categories/show.html.erb within layouts/application (6.2ms)
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 106ms (Views: 102.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:08:53 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (183.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (119.2ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (264.1ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-03-25 14:08:58 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ktYdqyMnnXfMIojUQ5drHMeTM6Bqyh7TGry4SqTwqDeVCNJH88uHkTKU1aY54Pyfw95MFCBnw/JcvHvKpYTfyg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2016-03-25 14:08:58 -0500
+Processing by HomeController#index as HTML
+  [1m[35mReview Load (0.3ms)[0m  SELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/categories.self-06f3493c8da0c075435efcf8bf08c144f1e496cc5a7213d14f88add086847ae0.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Processing by HomeController#index as HTML
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+  [1m[36mReview Load (0.5ms)[0m  [1mSELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3[0m
+  [1m[35mCategory Load (0.4ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.erb within layouts/application (7.1ms)
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+Completed 200 OK in 98ms (Views: 95.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:08:58 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (47.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (103.8ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-03-25 14:09:01 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Parameters: {"authenticity_token"=>"2LrnBDqPPkCBSTaOVh3DOtsD/17WrbkLzahFvRtLAWZ73QlqdZWQkxtWmkisVcpKflxrTwGNj5cXJBbyzdMZHg=="}
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (34.3ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/users/sign_up" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+Processing by Devise::RegistrationsController#new as HTML
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (32.9ms)
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+Completed 200 OK in 131ms (Views: 129.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/categories.self-06f3493c8da0c075435efcf8bf08c144f1e496cc5a7213d14f88add086847ae0.css?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/stylesheets/devise/registrations.css" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/devise/registrations.css"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:09:02 -0500
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:09:02 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:09:02 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (151.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (94.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (194.9ms)
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:12:20 -0500
+Processing by HomeController#index as HTML
+  Parameters: {"authenticity_token"=>"/G/Y481QLja0GKrZsmtnYWnPsVjjyVNZYoOpx6QjRwJfCDaNgkqA5S4HBh9II24RzJAlSTTpZcW4D/qIcrtfeg=="}
+  [1m[36mReview Load (0.3ms)[0m  [1mSELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3[0m
+  [1m[35mCategory Load (0.3ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 116ms (Views: 113.7ms | ActiveRecord: 0.6ms)
+
+
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+Started GET "/assets/categories.self-06f3493c8da0c075435efcf8bf08c144f1e496cc5a7213d14f88add086847ae0.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/home/index" for ::1 at 2016-03-25 14:12:21 -0500
+Processing by HomeController#index as HTML
+  [1m[35mReview Load (0.4ms)[0m  SELECT  "reviews".* FROM "reviews"  ORDER BY "reviews"."id" DESC LIMIT 3
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered home/index.html.erb within layouts/application (11.1ms)
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:12:21 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (114.5ms)
+
+
+Started GET "/categories/3" for ::1 at 2016-03-25 14:12:37 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mProduct Load (0.2ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 35.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/categories/3" for ::1 at 2016-03-25 14:17:43 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mProduct Load (0.3ms)[0m  SELECT "products".* FROM "products" WHERE "products"."category_id" = $1  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 147ms (Views: 145.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/categories.self-9981ed33dcc0db1cfae01a1269cc07b2d4a097627671cf8cfe514b133b2b6f3d.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/registrations.self-45be701692bf667e68777faa2e327ae92b3a81a45f037f510c460d49b2f731e5.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/home.self-f7840193d529e77da24441bf61e1395d93e456ae63a529ef188960e31dd6dfcd.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/scaffolds.self-63e8e472d0221ee0ffd3c28deaf70b33547a84e5b2f3d7f2b0dbfbf03bd8ddbf.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/products.self-b9cc82c6697c4c55dd3e365b06fe1fa7249bf4e7f6ca11cefabbb2e3a7cffe89.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/reviews.self-ed7a47bd363d38390c8b73c66bf8c950d40b39b2b596df9bfd0b85953ce9baa9.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+
+
+Started GET "/categories/3" for ::1 at 2016-03-25 14:17:44 -0500
+Started GET "/assets/application.self-3b5c735e1cca385a93c1284433dfe32b5cb80520493d476f63b746a2f6b9fbdc.css?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+Processing by CategoriesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT 1  [["id", 3]]
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+  [1m[36mProduct Load (4.0ms)[0m  [1mSELECT "products".* FROM "products" WHERE "products"."category_id" = $1[0m  [["category_id", 3]]
+  Rendered categories/show.html.erb within layouts/application (14.3ms)
+
+
+Started GET "/assets/categories.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/jquery.raty.self-628421be04f36f7a8fa8b9b884c6d7824d6f8bdeba4f172b131f15aa63f713e8.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/ratyrate.self-b9262c04d0d8852b84fc29d4c3a7111e055b19f14c93d21421469c77032a601c.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/reviews.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/cloudinary/jquery.ui.widget.self-92c37a41e67e528eecf100716907331b4b9aa4f546bf75ef2e0529c8c03a562d.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+Completed 200 OK in 142ms (Views: 115.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/cloudinary/jquery.iframe-transport.self-6fdaccef712b63a5a9aa8fbcd0e6d2071a6056eb3e165835e05ff0734dd9d5fe.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/cloudinary/jquery.fileupload.self-c6cbb0b05ba3d5565ddfbc78d52abc7a89e964b7cb015b0c930d5bb6c89e4b8f.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/cloudinary/index.self-545c38b0922de19734fbffde62792c37c2aef6a3216cfa472449173165220f7d.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+
+
+Started GET "/assets/cloudinary/jquery.cloudinary.self-5f62444aae90b775c01e6c407213bfa12aa8746e5252b9af975ed4e9f8d681df.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+Started GET "/assets/categories.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/registrations.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/scaffolds.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/cloudinary/cloudinary-jquery-file-upload.js.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/home.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/products.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+
+Started GET "/assets/reviews.css.map" for ::1 at 2016-03-25 14:17:44 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/cloudinary/cloudinary-jquery-file-upload.js.map"):
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5.2) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5.2) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5.2) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5.2) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  puma (3.2.0) lib/puma/configuration.rb:227:in `call'
+  puma (3.2.0) lib/puma/server.rb:561:in `handle_request'
+  puma (3.2.0) lib/puma/server.rb:406:in `process_client'
+  puma (3.2.0) lib/puma/server.rb:271:in `block in run'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `call'
+  puma (3.2.0) lib/puma/thread_pool.rb:111:in `block in spawn_thread'
+
+
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/actionpack-4.2.5.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (319.7ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (59.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.0ms)

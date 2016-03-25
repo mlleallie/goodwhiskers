@@ -12,16 +12,22 @@ $head-weight:  700;
 $body-font: Raleway;
 $body-weight: 400;
 
+
+body{
+  background-image: none;
+} //this removes/hides the background image that was being inherited from elsewhere
+
 .boom{
   background: rgb(34, 41, 50);
 }
+
 .cat_show {
   background-image: url('https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a');
-  width: 100%;
-  background-position: 0px -360px;
+  // width: 100%;
+  background-position: center -479px;
   margin: 0;
   height: 120px;
-  background-size: cover;
+  background-size: 1500px;
   background-repeat: no-repeat;
   border-bottom: solid rgb(37, 30, 35) 5px;
   .cat_title {
@@ -67,6 +73,7 @@ p.mfg {
 
 p {
   color: $yellow;
+  max-width: 700px;
 }
 
 .prod_link a{
