@@ -1,61 +1,55 @@
-body {
-  background: url("https://images.unsplash.com/photo-1447783333881-70715fdf7aa3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=da58f084432f5cc312bd4a37e7faa39b");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center top;
-  overflow: visible;
-  margin: 0;
-  padding: 0; }
+/*
+Error: Invalid CSS after ">>>>>>> master": expected "{", was "}"
+        on line 62 of ./app/assets/stylesheets/products.scss
 
-.grid-item-product {
-  color: red; }
+57:   margin: 30px;
+58:   background-color: black;
+59:   border: 1px solid black;
+60:   opacity: 0.7;
+61: >>>>>>> master
+62: }
+63: 
+64: p#prod_name{
+65:   font-family: $header-font;
+66:   font-size: $header-text;
+67:   text-align: center;
 
-.row.product {
-  padding-right: 25px;
-  padding-left: 25px; }
-
-.prod_img img {
-  position: relative;
-  margin: 0;
-  background-size: cover;
-  background-repeat: no-repeat; }
-
-p#prod_name {
-  font-size: 30px;
-  text-align: center;
-  display: block;
-  margin-bottom: 5px; }
-
-.tiny {
-  display: block;
-  text-align: center; }
-
-.description {
-  margin-left: 10px; }
-
-.below {
-  text-align: center;
-  display: block; }
-
-.edit_back_link {
-  text-align: center; }
-  .edit_back_link a {
-    text-decoration: none;
-    color: #59541a; }
-    .edit_back_link a:hover {
-      font-style: italic;
-      color: #59541a; }
-
-.prod_img {
-  text-align: center;
-  position: relative;
-  display: inline-block;
-  border: 3px solid white;
-  padding: 5px;
-  color: white; }
-
-.heading {
-  margin-left: 30px; }
-
-/*# sourceMappingURL=products.css.map */
+Backtrace:
+./app/assets/stylesheets/products.scss:62
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:666:in `block_contents'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Users/jasonhorine/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \">>>>>>> master\": expected \"{\", was \"}\"\A         on line 62 of ./app/assets/stylesheets/products.scss\A \A 57:   margin: 30px;\A 58:   background-color: black;\A 59:   border: 1px solid black;\A 60:   opacity: 0.7;\A 61: >>>>>>> master\A 62: }\A 63: \A 64: p#prod_name{\A 65:   font-family: $header-font;\A 66:   font-size: $header-text;\A 67:   text-align: center;"; }

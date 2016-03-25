@@ -1,6 +1,21 @@
 // Place all the styles related to the Products controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//variables
+
+$purple: #644a51  ;
+$yellow: #d9b554  ;
+$gray: #5f7477  ;
+$header-text: 40px;
+$header-font: 'Arimo', sans-serif;
+$body-text: 25px;
+$head-weight:  700;
+$body-font: Raleway;
+$body-weight: 400;
+
+//Product show SCSS
+
 body {
   background: url("https://images.unsplash.com/photo-1447783333881-70715fdf7aa3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=da58f084432f5cc312bd4a37e7faa39b");
   background-size: cover;
@@ -20,28 +35,61 @@ body {
     padding-left: 25px;
 }
 
+<<<<<<< HEAD
  .prod_img img{
   position: relative;
   margin: 0;
   background-size: cover;
   background-repeat: no-repeat;
+=======
+ .prod_img_main {
+    text-align: center;
+     img{
+      width: 50%;
+      height: auto;
+      position: relative;
+      margin: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+}
+.transbox {
+  margin: 30px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.7;
+>>>>>>> master
 }
 
 p#prod_name{
-  // font-family: 'Libre Baskerville', serif;
-  font-size: 30px;
+  font-family: $header-font;
+  font-size: $header-text;
   text-align: center;
   display: block;
   margin-bottom: 5px;
+  color: $purple;
+  margin-top: 10px;
 }
 
 .tiny {
   display: block;
   text-align: center;
+  color: $yellow;
+  font-family: $body-font;
+    a{
+      color: $gray;
+      text-decoration: none;
+        &:hover {
+          font-style: italic;
+          text-decoration: underline;
+        }
+    }
 }
 
 .description {
   margin-left: 10px;
+  color: $yellow;
+  font-family: $body-font;
 }
 
 .below {
@@ -53,27 +101,24 @@ p#prod_name{
   text-align: center;
     a {
       text-decoration: none;
-      color: rgb(89, 84, 26);
+      color: $gray;
+      font-family: $body-font;
         &:hover{
           font-style: italic;
-          color: rgb(89, 84, 26);
+          text-decoration: underline;
+          color: $gray;
         }
     }
 }
+
+// Product index SCSS
 
 .prod_img {
   text-align: center;
   position: relative;
   display: inline-block;
-  border: 3px solid white;
+  // border: 3px solid white;
   padding: 5px;
   color: white;
 }
 
-.heading {
-  margin-left: 30px;
-}
-
-.back-btn {
-
-}
