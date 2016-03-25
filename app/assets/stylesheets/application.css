@@ -22,16 +22,18 @@
 }
 .home_btn {
   color: red;
+  padding: 5px 20px;
 }
 
 body {
   display: inline;
   padding:0px;
-  background-color: rgb(14, 18, 35)
+  background-color: rgb(14, 18, 35);
+  width: 100%;
 }
 
 .search_btn {
-  color:#2d3739;
+  color:#d9b554;
   background-color: #2d3739;
   padding: 5px 20px;
 }
@@ -40,12 +42,12 @@ body {
   color: #d9b554;
   background-color: #2d3739;
   /*font-family: 'Shadows Into Light';*/
-  font-size: 15px;
-  padding: 5px;
+  font-size: 20px;
+  padding: 0px;
 }
 
 .site_nav a {
-  color: #644a51;
+  color: #d9b554;
 }
 
 .site_nav.a:visited {
@@ -58,6 +60,7 @@ body {
 
 .login_logout {
   text-align: right;
+  padding: 5px 20px;
 }
 
 /*.footer_bar {

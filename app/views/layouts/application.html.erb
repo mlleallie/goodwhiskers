@@ -17,7 +17,7 @@
         <div class="col-sm-4">
           <div class="search_btn">
           <%= form_tag(products_path, :method => "get", id: "search-form") do %>
-          <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
           <%= submit_tag "Search" %>
           <% end %>
           </div>
@@ -28,15 +28,15 @@
           </span>
         </div>
         <div class="col-sm-2">
-        <span class="home_btn">
-          <a><%= link_to 'Home', home_index_path, method: :get %></a>
-          </span>
         </div>
   </div>
   <div class="row">
-    <div class="col-sm-6">
+    <div class="col-sm-7">
+    <span class="home_btn">
+          <a><%= link_to 'Home', home_index_path, method: :get %></a>
+    </span>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-5">
         <span class="login_logout">
           <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
             <!-- generate Log In and Sign Up buttons -->
