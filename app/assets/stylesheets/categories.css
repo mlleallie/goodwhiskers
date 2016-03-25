@@ -11,9 +11,9 @@
   background-repeat: no-repeat;
   border-bottom: solid #251e23 5px; }
   .cat_show .cat_title {
-    padding-top: 150px;
+    padding-top: 25px;
     font-size: 50px;
-    color: #59541a;
+    color: #d9b554;
     font-weight: 700;
     text-align: center;
     margin: 0; }
@@ -25,11 +25,11 @@
     .cat_prods .prod_title a {
       text-decoration: none;
       font-size: 30px;
-      color: #59541a; }
+      color: #644a51; }
       .cat_prods .prod_title a:hover {
         font-style: italic;
         background: #222932;
-        color: #59541a; }
+        color: #d9b554; }
 
 p.mfg {
   margin-top: 0;
@@ -40,13 +40,13 @@ p.mfg {
   width: 100%; }
 
 p {
-  color: #919b85; }
+  color: #d9b554; }
 
 .prod_link a {
-  color: #59541a;
+  color: #5f7477;
   text-decoration: none; }
   .prod_link a:hover {
     font-style: italic;
-    color: #59541a; }
+    color: #5f7477; }
 
 /*# sourceMappingURL=categories.css.map */
