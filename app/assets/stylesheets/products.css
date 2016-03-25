@@ -1,8 +1,19 @@
 body {
-  background: red; }
+  background: url("https://images.unsplash.com/photo-1447783333881-70715fdf7aa3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=da58f084432f5cc312bd4a37e7faa39b");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  overflow: visible;
+  margin: 0;
+  padding: 0; }
 
 .grid-item-product {
   color: red; }
+
+.row.product {
+  padding-right: 25px;
+  padding-left: 25px; }
 
 .prod_img img {
   width: 100%;
@@ -36,5 +47,16 @@ p#prod_name {
     .edit_back_link a:hover {
       font-style: italic;
       color: #59541a; }
+
+.prod_img {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  border: 3px solid white;
+  padding: 5px;
+  color: white; }
+
+.heading {
+  margin-left: 30px; }
 
 /*# sourceMappingURL=products.css.map */
