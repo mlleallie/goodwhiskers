@@ -45,14 +45,14 @@
   <%= link_to('All Products', products_path) %><br>
   <%= link_to('Home', home_index_path) %>
   </div>
-</div>
 
-<br>
-<div class="review-link">
-  <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
-</div>
 
-<h2>Reviews:</h2>
+  <br>
+  <div class="review-link">
+    <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
+  </div>
+</div>
+<h2 class="review-title">Reviews:</h2>
 <% @reviews.each do |f| %>
   <h4><%= f.title %></h4>
   <p><%= f.user.email %> <%= f.created_at %></p><br>
