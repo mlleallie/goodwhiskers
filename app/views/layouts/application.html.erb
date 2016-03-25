@@ -18,6 +18,12 @@
     </span>
     <span class="home_btn">
     <a><%= link_to 'New Product', new_product_path, method: :get %></a>
+    
+    <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+    <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+    <%= submit_tag "Search" %>
+    <% end %>
+ 
 
     <span class="login_logout">
       <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
