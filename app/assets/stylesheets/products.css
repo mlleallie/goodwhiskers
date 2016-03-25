@@ -8,9 +8,6 @@ body {
   margin: 0;
   padding: 0; }
 
-.grid-item-product {
-  color: red; }
-
 .row.product {
   padding-right: 25px;
   padding-left: 25px; }
@@ -78,13 +75,19 @@ p#prod_name {
     text-decoration: none;
     color: #5f7477;
     font-family: Raleway;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
     .review-link a:hover {
       font-style: italic;
       text-decoration: underline;
       color: #5f7477; }
+
+.review-title {
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 40px;
+  color: #644a51; }
 
 .prod_img {
   text-align: center;

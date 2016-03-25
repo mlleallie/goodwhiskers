@@ -27,10 +27,6 @@ body {
   padding: 0;
 }
 
-.grid-item-product {
-  color:red;
-}
-
 .row.product {
     padding-right: 25px;
     padding-left: 25px;
@@ -111,7 +107,7 @@ p#prod_name{
     text-decoration: none;
     color: $gray;
     font-family: $body-font;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
       &:hover{
@@ -120,6 +116,13 @@ p#prod_name{
         color: $gray;
       }
   }
+}
+
+.review-title {
+  text-align: center;
+  font-family: $header-font;
+  font-size: $header-text;
+  color: $purple;
 }
 
 // Product index SCSS
