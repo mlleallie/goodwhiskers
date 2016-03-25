@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#home_background {
+body {
   margin: 0;
   padding: 0;
   background-image: url('http://res.cloudinary.com/goodwhiskers/image/upload/v1458840518/beardbackground_aikc56.jpg');
@@ -23,10 +23,10 @@
   // background-repeat: no-repeat;
   // border: 1px grey solid;
     .home_title {
-      padding-top: 20px;
+      padding-top: 30px;
       font-size: 40px;
       color: #B5D6B2 ;
-      // font-family: 'Libre Baskerville', serif;
+      font-family: 'Libre Baskerville', serif;
       font-weight: 700;
       text-align: center;
       margin: 0;
@@ -35,7 +35,7 @@
 
 .prod_cats {
   color: white;
-  // font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 .home_nav{

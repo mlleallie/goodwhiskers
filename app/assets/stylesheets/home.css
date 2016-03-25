@@ -1,5 +1,4 @@
-
-#home_background {
+body {
   margin: 0;
   padding: 0;
   background-image: url("http://res.cloudinary.com/goodwhiskers/image/upload/v1458840518/beardbackground_aikc56.jpg");
@@ -15,15 +14,17 @@
   margin: 0;
   height: 80px; }
   .homepage_header .home_title {
-    padding-top: 20px;
+    padding-top: 30px;
     font-size: 40px;
     color: #B5D6B2;
+    font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     text-align: center;
     margin: 0; }
 
 .prod_cats {
-  color: white; }
+  color: white;
+  font-family: 'Libre Baskerville', serif; }
 
 .home_nav .nav_links {
   text-decoration: none;
@@ -48,6 +49,5 @@ p {
   width: 400px;
   vertical-align: top;
   float: left; }
-
 
 /*# sourceMappingURL=home.css.map */
