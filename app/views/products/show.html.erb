@@ -45,17 +45,21 @@
   <%= link_to('All Products', products_path) %><br>
   <%= link_to('Home', home_index_path) %>
   </div>
+
+
+  <br>
+  <div class="review-link">
+    <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
+  </div>
 </div>
 
-<br>
-<div class="review-link">
-  <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
-</div>
-
-<h2>Reviews:</h2>
+<div class="transbox">
+<h2 class="review-title">Reviews:</h2>
 <% @reviews.each do |f| %>
-  <h4><%= f.title %></h4>
-  <p><%= f.user.email %> <%= f.created_at %></p><br>
-  <p><%= f.comment %></p><br>
-  <p><%= f.rating %></p>
+  <h4 class="indv-title"><%= f.title %></h4>
+  <p class="subhead"><%= f.user.email %> <%= f.created_at %></p><br>
+  <p class="review-text"><%= f.comment %></p><br>
+  <p class="rating-text">Rating: <%= f.rating %> out of 5!</p>
 <% end %>
+
+</div>

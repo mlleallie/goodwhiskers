@@ -8,9 +8,6 @@ body {
   margin: 0;
   padding: 0; }
 
-.grid-item-product {
-  color: red; }
-
 .row.product {
   padding-right: 25px;
   padding-left: 25px; }
@@ -27,18 +24,18 @@ body {
 
 .transbox {
   margin: 30px;
-  background-color: black;
-  border: 1px solid black;
-  opacity: 0.7; }
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid black; }
 
 p#prod_name {
   font-family: "Arimo", sans-serif;
   font-size: 40px;
   text-align: center;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   color: #644a51;
-  margin-top: 10px; }
+  margin-top: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
 
 .tiny {
   display: block;
@@ -78,7 +75,7 @@ p#prod_name {
     text-decoration: none;
     color: #5f7477;
     font-family: Raleway;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
     .review-link a:hover {
@@ -86,11 +83,60 @@ p#prod_name {
       text-decoration: underline;
       color: #5f7477; }
 
+.review-title {
+  text-align: center;
+  font-family: "Arimo", sans-serif;
+  font-size: 40px;
+  color: #644a51;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; }
+
+.indv-title {
+  color: #644a51;
+  font-size: 30px;
+  font-family: Raleway;
+  margin-bottom: 0;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-left: 5px; }
+
+.subhead {
+  font-size: 9px;
+  margin-left: 5px; }
+
+.review-text {
+  margin-left: 5px;
+  color: #d9b554;
+  font-family: Raleway; }
+
+.rating-text {
+  text-align: center;
+  color: #644a51;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  margin-left: 5px; }
+
+.title {
+  color: #644a51;
+  font-family: "Arimo", sans-serif;
+  font-size: 40px; }
+
+.panel {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #d9b554; }
+  .panel a {
+    text-decoration: none;
+    color: #d9b554; }
+
 .prod_img {
   text-align: center;
   position: relative;
   display: inline-block;
   padding: 5px;
   color: white; }
+
+.heading {
+  text-align: center;
+  font-size: 40px;
+  color: #644a51;
+  font-family: "Arimo", sans-serif; }
 
 /*# sourceMappingURL=products.css.map */
