@@ -2,51 +2,55 @@
 
 <p id="notice"><%= notice %></p>
 
-<div class="prod_img">
+<div class="prod_img_main">
   <%= image_tag @product.image %>
 </div>
 
-<p id="prod_name">
-  <%= @product.name %>
-</p>
-<p class="tiny">
-  <strong>Made by:</strong>
-  <%= @product.mfg %>
-</p>
+<div class="transbox">
+  <p id="prod_name">
+    <%= @product.name %>
+  </p>
+  <p class="tiny">
+    <strong>Made by:</strong>
+    <%= @product.mfg %>
+  </p>
 
-<p class="tiny">
-  <strong>Category:</strong>
-  <%= link_to(@product.category.name, category_path(@product.category.id)) %>
-</p>
+  <p class="tiny">
+    <strong>Category:</strong>
+    <%= link_to(@product.category.name, category_path(@product.category.id)) %>
+  </p>
 
-<p class="description">
-  <%= @product.description %>
-</p>
+  <p class="description">
+    <%= @product.description %>
+  </p>
 
-<p class="below">
-  <strong>Link to product:</strong>
-  <a href="http://<%= @product.url %>" target="_blank"><%= @product.url %></a>
-</p>
+  <p class="tiny">
+    <strong>Link to product:</strong>
+    <a href="http://<%= @product.url %>" target="_blank"><%= @product.url %></a>
+  </p>
 
-<p class="below">
-  <strong>Submitted by:</strong>
-  <%= @product.user.email %>
-</p>
-<br>
+  <p class="tiny">
+    <strong>Submitted by:</strong>
+    <%= @product.user.email %>
+  </p>
+  <br>
 
-<div class="edit_back_link">
-<% if current_user.id == @user %>
-  <%= link_to 'Edit', edit_product_path(@product) %> |
-<% else %>
-<%end%>
+  <div class="edit_back_link">
+  <% if current_user.id == @user %>
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+  <% else %>
+  <%end%>
 
-<%= link_to('All ' + @product.category.name.pluralize, category_path(@product.category.id)) %> |
-<%= link_to('All Products', products_path) %><br>
-<%= link_to('Home', home_index_path) %>
+  <%= link_to('All ' + @product.category.name.pluralize, category_path(@product.category.id)) %> |
+  <%= link_to('All Products', products_path) %><br>
+  <%= link_to('Home', home_index_path) %>
+  </div>
 </div>
 
 <br>
-<%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
+<div class="review-link">
+  <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
+</div>
 
 <h2>Reviews:</h2>
 <% @reviews.each do |f| %>
