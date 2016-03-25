@@ -86,6 +86,19 @@ p#prod_name {
       text-decoration: underline;
       color: #5f7477; }
 
+.title {
+  color: #644a51;
+  font-family: "Arimo", sans-serif;
+  font-size: 40px; }
+
+.panel {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #d9b554; }
+  .panel a {
+    text-decoration: none;
+    color: #d9b554; }
+
 .prod_img {
   text-align: center;
   position: relative;
