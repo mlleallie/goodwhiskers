@@ -19,29 +19,37 @@ body {
   position: relative;
   margin: 0;
   height: 80px;
+  margin-bottom: 50px;
   // background-size: cover;
   // background-repeat: no-repeat;
   // border: 1px grey solid;
     .home_title {
-      padding-top: 30px;
+      padding-top: 50px;
       font-size: 40px;
-      color: #B5D6B2 ;
-      font-family: 'Libre Baskerville', serif;
-      font-weight: 700;
+      color: rgb(100, 74, 81) ;
+      font-family: 'Raleway';
+      font-weight: 600;
+      font-style: italic;
       text-align: center;
       margin: 0;
     }
 }
 
 .prod_cats {
-  color: white;
-  font-family: 'Libre Baskerville', serif;
+  color: rgb(100, 74, 81);
+  font-family: 'Raleway', serif;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 .home_nav{
-  .nav_links{
+  .nav_links {
     text-decoration: none;
     list-style: none;
+      a {
+        color: #e8e8e8;
+      }
   }
 }
 
@@ -67,5 +75,9 @@ p{
   width: 400px;
   vertical-align: top;
   float: left;
+}
+
+#welcome {
+
 }
 
