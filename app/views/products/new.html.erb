@@ -1,6 +1,9 @@
 <%= stylesheet_link_tag params[:controller] %>
 
-<h1>New Product</h1>
-<%= cloudinary_js_config %>
-<%= render 'form' %>
-<%= link_to 'Back to Home', home_index_path %>
+<h1 class="heading">New Product</h1>
+
+  <%= cloudinary_js_config %>
+  <%= render 'form' %>
+  <div class="btn btn-success back-btn">
+    <%= link_to 'Back to Home', home_index_path %>
+  </div>

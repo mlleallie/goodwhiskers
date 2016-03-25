@@ -25,7 +25,7 @@ body {
   // border: 1px grey solid;
     .home_title {
       padding-top: 50px;
-      font-size: 40px;
+      font-size: 60px;
       color: rgb(100, 74, 81) ;
       font-family: 'Raleway';
       font-weight: 600;
@@ -39,17 +39,13 @@ body {
   color: rgb(100, 74, 81);
   font-family: 'Raleway', serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 40px;
   margin-top: 20px;
 }
 
 .home_nav{
-  .nav_links {
-    text-decoration: none;
-    list-style: none;
-      a {
-        color: #e8e8e8;
-      }
+  .nav_links:hover {
+    font-size: 15px;
   }
 }
 
@@ -58,17 +54,22 @@ p{
 }
 
 .sidebar_nav {
-  width: 200px;
+  width: 250px;
   float: left;
   margin-right: 40px;
   vertical-align: top;
   margin-left: 20px;
-    .nav_links a{
-      color: #AA9F7E;
+    .nav_links {
+      text-decoration: none;
+      list-style: none;
+      a {
+      color: #CDAA7D;
       text-decoration: none;
       text-align: left;
       display: table;
+      list-style: none;
     }
+  }
 }
 
 .about {
@@ -78,6 +79,6 @@ p{
 }
 
 #welcome {
-
+  color: #CDAA7D;
 }
 

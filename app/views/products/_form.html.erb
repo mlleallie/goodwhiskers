@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+<div class="panel-body">
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_area :name %>
@@ -39,15 +40,17 @@
     <%= f.text_area :url %>
   </div>
 
-<div class="field">
-  <%= f.label :image  %>
-  <%= f.file_field(:image) %>
-</div>
+  <div class="field">
+    <%= f.label :image  %><br>
+    <span class="prod_img"><%= f.file_field(:image) %></span>
+  </div>
 
   <div class="field">
     <%= f.hidden_field :user_id, value: current_user.id %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
+</div>
 <% end %>
