@@ -15,6 +15,7 @@ $body-weight: 400;
 .boom{
   background: rgb(34, 41, 50);
 }
+
 .cat_show {
   background-image: url('https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a');
   width: 100%;
@@ -39,7 +40,6 @@ $body-weight: 400;
   margin-left: 20px;
    .prod_title {
       margin-bottom: 0;
-
       a{
       text-decoration: none;
       font-size: 30px;
@@ -52,7 +52,6 @@ $body-weight: 400;
         }
     }
   }
-
 }
 
 p.mfg {
