@@ -10,12 +10,12 @@
     <div class="cat_prods">
       <% @products.each do |f| %>
         <div class="prod_img">
-        <%= image_tag f.image %>
-        <h4 class="prod_title"><%= link_to(f.name, product_path(f)) %></h4>
-        <p class="mfg">Created by: <%= f.mfg %></p><br>
-        <p class="prod_link"><%= truncate(f.description, length: 150) { link_to " read on!", product_path(f) }
-       %></p>
-       <img id="divider" src="http://cliparts.co/cliparts/8iE/6yR/8iE6yRj4T.png" alt="divider">
+          <%= image_tag f.image %>
+          <h4 class="prod_title"><%= link_to(f.name, product_path(f)) %></h4>
+          <p class="mfg">Created by: <%= f.mfg %></p><br>
+          <p class="prod_link"><%= truncate(f.description, length: 150) { link_to " read on!", product_path(f) }%></p>
+          <img id="divider" src="http://cliparts.co/cliparts/8iE/6yR/8iE6yRj4T.png" alt="divider">
+        </div>
       <% end %>
     </div>
 </div>

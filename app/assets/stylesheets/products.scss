@@ -103,6 +103,23 @@ p#prod_name{
     }
 }
 
+.review-link {
+  margin-left: 30px;
+  a {
+    text-decoration: none;
+    color: $gray;
+    font-family: $body-font;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      &:hover{
+        font-style: italic;
+        text-decoration: underline;
+        color: $gray;
+      }
+  }
+}
+
 // Product index SCSS
 
 .prod_img {
