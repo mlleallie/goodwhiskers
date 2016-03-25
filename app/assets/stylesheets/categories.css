@@ -1,13 +1,15 @@
+body {
+  background-image: none; }
+
 .boom {
   background: #222932; }
 
 .cat_show {
   background-image: url("https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a");
-  width: 100%;
-  background-position: 0px -360px;
+  background-position: center -479px;
   margin: 0;
   height: 120px;
-  background-size: cover;
+  background-size: 1500px;
   background-repeat: no-repeat;
   border-bottom: solid #251e23 5px; }
   .cat_show .cat_title {
@@ -40,7 +42,8 @@ p.mfg {
   width: 100%; }
 
 p {
-  color: #d9b554; }
+  color: #d9b554;
+  max-width: 700px; }
 
 .prod_link a {
   color: #5f7477;
