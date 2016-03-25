@@ -127,6 +127,22 @@ p#prod_name{
 
 // Product index SCSS
 
+.title {
+  color: $purple;
+  font-family: $header-font;
+  font-size: $header-text;
+}
+
+.panel {
+   background: rgba(0, 0, 0, 0.5);
+   border: none;
+   color: $yellow;
+   a {
+    text-decoration: none;
+    color: $yellow;
+   }
+}
+
 .prod_img {
   text-align: center;
   position: relative;
