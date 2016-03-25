@@ -17,12 +17,14 @@
      <a><%= link_to 'Home', home_index_path, method: :get %></a>
     </span>
     <span class="home_btn">
-    <a><%= link_to 'New Product', new_product_path, method: :get %></a>
-    
+    <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
+    </span>
+    <div class="search_btn">
     <%= form_tag(products_path, :method => "get", id: "search-form") do %>
     <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
     <%= submit_tag "Search" %>
     <% end %>
+    </div>
  
 
     <span class="login_logout">
