@@ -2,9 +2,20 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$purple: #644a51  ;
+$yellow: #d9b554  ;
+$gray: #5f7477  ;
+$header-text: 40px;
+$header-font: 'Arimo', sans-serif;
+$body-text: 25px;
+$head-weight:  700;
+$body-font: Raleway;
+$body-weight: 400;
+
 .boom{
   background: rgb(34, 41, 50);
 }
+
 .cat_show {
   background-image: url('https://images.unsplash.com/photo-1418834508981-6114b37427b8?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=b6b76071f9cabb3ff04b1246f19c763a');
   width: 100%;
@@ -15,9 +26,9 @@
   background-repeat: no-repeat;
   border-bottom: solid rgb(37, 30, 35) 5px;
   .cat_title {
-    padding-top: 150px;
+    padding-top: 25px;
     font-size: 50px;
-    color: rgb(89, 84, 26);
+    color: $yellow;
     // font-family: 'Libre Baskerville', serif;
     font-weight: 700;
     text-align: center;
@@ -29,20 +40,18 @@
   margin-left: 20px;
    .prod_title {
       margin-bottom: 0;
-
       a{
       text-decoration: none;
       font-size: 30px;
-      color: rgb(89, 84, 26);
+      color: $purple;
       // font-family: 'Libre Baskerville', serif;
         &:hover{
           font-style: italic;
           background: rgb(34, 41, 50);
-          color: rgb(89, 84, 26);
+          color: $yellow;
         }
     }
   }
-
 }
 
 p.mfg {
@@ -56,14 +65,14 @@ p.mfg {
 }
 
 p {
-  color: #919b85;
+  color: $yellow;
 }
 
 .prod_link a{
-  color: rgb(89, 84, 26);
+  color: $gray;
   text-decoration: none;
     &:hover{
       font-style: italic;
-      color: rgb(89, 84, 26);
+      color: $gray;
     }
 }
