@@ -12,47 +12,53 @@
 </head>
 <body>
 <div class="container-fluid">
-  <header class="site_nav">
-    <nav>
-      <span class="home_btn">
-       <a><%= link_to 'Home', home_index_path, method: :get %></a>
-      </span>
-      <span class="home_btn">
-
-      <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
-      </span>
-      
-      <div class="search_btn">
-      <%= form_tag(products_path, :method => "get", id: "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
-      <%= submit_tag "Search" %>
-      <% end %>
-
-      </div>
-
-      <span class="login_logout">
-        <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
-          <!-- generate Log In and Sign Up buttons -->
-          <span>
-            <a> <%= link_to 'Log In', new_user_session_path, method: :get%></a>
-          </span>
-          <span class="login_logout">
-            <a> <%= link_to 'Sign Up', new_user_registration_path, method: :get%></a>
-          </span>
-        <% else %> <!-- execute this code block if the user IS signed in -->
-        <!-- greet the user and offer log out button -->
-          <span class="login_logout">
-            <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
-          </span>
-          <span class="login_logout">
-            <a> <%= "Logged in as: " + current_user.email %></a>
-          </span>
+  <div class="row">
+    <header class="site_nav">
+      <nav>
+      <div class="col-sm-4">
+        <div class="search_btn">
+        <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+        <%= submit_tag "Search" %>
         <% end %>
-      </span>
-    </nav>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <span class="home_btn">
+        <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
+        </span>
+      </div>
+      <div class="col-sm-2">
+      <span class="home_btn">
+        <a><%= link_to 'Home', home_index_path, method: :get %></a>
+        </span>
+      </div>
+  </div>
+  <div class="row">
+        <span class="login_logout">
+          <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
+            <!-- generate Log In and Sign Up buttons -->
+            <span>
+              <a> <%= link_to 'Log In', new_user_session_path, method: :get%></a>
+            </span>
+            <span class="login_logout">
+              <a> <%= link_to 'Sign Up', new_user_registration_path, method: :get%></a>
+            </span>
+          <% else %> <!-- execute this code block if the user IS signed in -->
+          <!-- greet the user and offer log out button -->
+            <span class="login_logout">
+              <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
+            </span>
+            <span class="login_logout">
+              <a> <%= "Logged in as: " + current_user.email %></a>
+            </span>
+          <% end %>
+        </span>
+      </nav>
 
 
-  </header>
+    </header>
+  </div>
 </div>
 <%= yield %>
 
