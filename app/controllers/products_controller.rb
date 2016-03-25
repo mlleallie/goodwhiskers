@@ -67,6 +67,7 @@ end
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+     if params["product"]["image"].present?
     response = Cloudinary::Uploader.upload(params["product"]["image"], :transformation => [
       {:width => 500, :height => 500, :crop => :limit},
      ],
@@ -74,8 +75,14 @@ end
                   {:width => 75, :height => 75,
                   :crop => :thumb, :format => 'png'},
         ])
-    @product.image = response["url"]
-    @product.thumb = response["eager"][0]["url"]
+      @product.image = response["url"]
+      @product.thumb = response["eager"][0]["url"]
+      
+    else
+      @product.image = @product.image
+      @product.thumb = @product.thumb
+    end
+
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }
