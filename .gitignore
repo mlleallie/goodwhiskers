@@ -5,3 +5,5 @@
 /tmp
 
 /tmp/*
+
+/config/cloudinary.yml
