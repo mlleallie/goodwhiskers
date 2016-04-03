@@ -17,11 +17,11 @@
         <div class="search_btn">
           <%= form_tag(products_path, :method => "get", id: "search-form") do %>
           <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
-          <%= submit_tag "Search" %>
+          <span class="stupid_btn"><%= submit_tag "Search" %></span>
           <% end %>
         </div>
       </div>
-      <div class="col-3 new">
+      <div class="col-3 new right">
         <span class="new_prod">
         <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
         </span>
@@ -33,7 +33,7 @@
           <a><%= link_to 'Home', home_index_path, method: :get %></a>
         </span>
       </div>
-      <div class="col-9 authentication">
+      <div class="col-9 authentication right">
         <span class="login_logout">
           <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
             <!-- generate Log In and Sign Up buttons -->
@@ -49,7 +49,7 @@
               <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
             </span>
             <span class="login_logout">
-              <a> <%= "| Logged in as: " + current_user.email %></a>
+              <span> <%= "| Logged in as: " + current_user.email %></span>
             </span>
           <% end %>
         </span>

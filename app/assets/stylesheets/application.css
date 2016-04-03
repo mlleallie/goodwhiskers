@@ -20,6 +20,9 @@
 
 body {
   margin: 0;
+  font-family: "Raleway";
+  background: grey;
+  margin-left: 5px;
 }
 
 .col-1 {width: 8.33%;}
@@ -37,13 +40,22 @@ body {
 
 [class*="col-"] {
     float: left;
-    padding: 15px;
+    padding: 3px 10px 3px 10px;
 }
 
 .row:after {
     content: "";
     clear: both;
     display: block;
+}
+[class*="col-"] a{
+  text-decoration: none;
+  color: yellow;
+}
+
+[class*="col-"] a:hover{
+  font-size: 15px;
+  color: teal;
 }
 
 .site_nav {
@@ -56,6 +68,22 @@ body {
   background: black;
 }
 
-.authentication {
+.stupid_btn input{
+  font-family: "Raleway";
+  color: black;
+  border-radius: 20%;
+  background: yellow;
+}
+
+input#search {
+  font-family: "Raleway";
+}
+
+.right {
   text-align: right;
+}
+
+h1 {
+  text-align: center;
+  font-style: italic;
 }
