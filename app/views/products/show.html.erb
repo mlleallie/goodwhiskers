@@ -6,14 +6,16 @@
   <%= image_tag @product.image %>
 </div>
 
-<div class="transbox">
-  <p id="prod_name">
+<div class="page_head">
+  <h1 class="title">
     <%= @product.name %>
-  </p>
+  </h1>
   <p class="tiny">
     <strong>Made by:</strong>
     <%= @product.mfg %>
   </p>
+</div>
+
 
   <p class="tiny">
     <strong>Category:</strong>
@@ -53,7 +55,6 @@
   <div class="review-link">
     <%= link_to 'Leave a Review!', new_product_review_path(@product) %><br>
   </div>
-</div>
 
 <div class="transbox">
 <h2 class="review-title">Reviews:</h2>

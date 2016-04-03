@@ -8,60 +8,54 @@
     <link rel="stylesheet" type="text/css" href="#">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,600italic,100' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
-<div class="container-fluid pants">
-    <header class="site_nav">
-  <div class="row pants">
-        <div class="col-sm-4">
-          <div class="search_btn">
+<div class="container-fluid">
+  <header class="site_nav">
+    <div class="row top">
+      <div class="col-9 search">
+        <div class="search_btn">
           <%= form_tag(products_path, :method => "get", id: "search-form") do %>
           <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
           <%= submit_tag "Search" %>
           <% end %>
-          </div>
         </div>
-        <div class="col-sm-2">
-          <span class="home_btn">
-          <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
-          </span>
-        </div>
-        <div class="col-sm-2">
-        </div>
-  </div>
-  <div class="row pants">
-    <div class="col-sm-7">
-    <span class="home_btn">
-          <a><%= link_to 'Home', home_index_path, method: :get %></a>
-    </span>
+      </div>
+      <div class="col-3 new">
+        <span class="new_prod">
+        <a><%= link_to 'Submit New Product', new_product_path, method: :get %></a>
+        </span>
+      </div>
     </div>
-    <div class="col-sm-5">
+    <div class="row bottom">
+      <div class="col-3 home">
+        <span class="home_btn">
+          <a><%= link_to 'Home', home_index_path, method: :get %></a>
+        </span>
+      </div>
+      <div class="col-9 authentication">
         <span class="login_logout">
           <% if !user_signed_in? %> <!-- execute this code block if the user is NOT signed in -->
             <!-- generate Log In and Sign Up buttons -->
             <span>
-              <a> <%= link_to 'Log In', new_user_session_path, method: :get%></a>
+              <a> <%= link_to 'Log In', new_user_session_path, method: :get%> | </a>
             </span>
             <span class="login_logout">
               <a> <%= link_to 'Sign Up', new_user_registration_path, method: :get%></a>
             </span>
           <% else %> <!-- execute this code block if the user IS signed in -->
-          <!-- greet the user and offer log out button -->
+            <!-- greet the user and offer log out button -->
             <span class="login_logout">
               <a> <%= link_to 'Log Out', destroy_user_session_path, method: :delete%></a>
             </span>
             <span class="login_logout">
-              <a> <%= "Logged in as: " + current_user.email %></a>
+              <a> <%= "| Logged in as: " + current_user.email %></a>
             </span>
           <% end %>
         </span>
+      </div>
     </div>
-    
-
-
-    </header>
-  </div>
+  </header>
 </div>
 <%= yield %>
 
