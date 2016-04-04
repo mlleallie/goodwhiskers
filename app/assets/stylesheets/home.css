@@ -1,3 +1,17 @@
+.about {
+  display: inline; }
 
+.sidebar_nav {
+  background: #262729;
+  float: left; }
+
+.sidebar_nav:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  left: 0;
+  background: #262729; }
 
 /*# sourceMappingURL=home.css.map */

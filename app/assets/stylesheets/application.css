@@ -21,8 +21,7 @@
 body {
   margin: 0;
   font-family: "Raleway";
-  background: grey;
-  margin-left: 5px;
+  background: #545052;
 }
 
 .col-1 {width: 8.33%;}
@@ -50,29 +49,29 @@ body {
 }
 [class*="col-"] a{
   text-decoration: none;
-  color: yellow;
+  color: #C2EFB3;
 }
 
 [class*="col-"] a:hover{
   font-size: 15px;
-  color: teal;
+  color: #C2EFB3;
 }
 
 .site_nav {
-  background: black;
+  background: rgb(38, 39, 41);
   color: white;
 }
 
 .search_btn {
-  color: white;
-  background: black;
+  color: #C2EFB3;
+  background: rgb(38, 39, 41);
 }
 
 .stupid_btn input{
   font-family: "Raleway";
   color: black;
   border-radius: 20%;
-  background: yellow;
+  background: #C2EFB3;
 }
 
 input#search {
@@ -86,4 +85,30 @@ input#search {
 h1 {
   text-align: center;
   font-style: italic;
+  font-size: 40px;
+}
+
+.homepage_header {
+  background: url("http://img.juimg.com/tuku/yulantu/140803/330666-140P3203Q673.jpg");
+  background-size: 15%;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.body_text {
+  color: #97ABB1;
+}
+
+.nav_links {
+  list-style-type: none;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #C2EFB3;
+}
+
+.nav_links a:hover {
+  font-size: 15px;
+  color: #C2EFB3;
 }

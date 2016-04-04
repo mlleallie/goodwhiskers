@@ -1,31 +1,23 @@
 <%= stylesheet_link_tag params[:controller] %>
-<div id="home_background">
-
 <header id="header" class="homepage_header">
-
   <h1 class="title">GoodWhiskers</h1>
-
 </header>
+<div class="row">
+    <nav class="sidebar_nav col-3">
+      <h3 class="prod_cats body_text">Product Categories</h3>
+      <ul class="home_nav">
+        <% @category.each do  |category| %>
+          <li class="nav_links"><a><%= link_to(category.name, category_path(category.id)) %></a></li>
+        <% end %>
+        <li class="nav_links"><%= link_to "All Products", products_path %></li>
+      </ul>
+    </nav>
 
-<p>
-  <nav class="sidebar_nav">
-    <h3 class="prod_cats">Product Categories</h3>
-    <ul class="home_nav">
-      <% @category.each do  |category| %>
-      <li class="nav_links"><%= link_to(category.name, category_path(category.id)) %></a></li>
-      <% end %>
-      <li class="nav_links"> <%= link_to "All Products", products_path %> </li>
-    </ul>
-  </nav>
-</p>
-
-<div class="about">
-  <h3 class="prod_cats">Welcome!</h3>
-  <p id="welcome">
-    Hi there, and welcome to GoodWhiskers! We're the best mens' grooming products site on the web. Feel free to submit products for review, submit reviews for products, or just peruse products and reviews of others.<br>
-
-    <br>But please don't forget to keep your face groomed.
-  </p>
-</div>
-
+  <div class="about body_text col-9">
+    <h3 class="prod_cats">Welcome!</h3>
+    <p id="welcome">
+      Hi there, and welcome to GoodWhiskers! We're the best mens' grooming products site on the web. Feel free to submit products for review, submit reviews for products, or just peruse products and reviews of others.<br>
+      <br>But please don't forget to keep your face groomed.
+    </p>
+  </div>
 </div>
